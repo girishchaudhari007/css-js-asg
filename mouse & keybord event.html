@@ -1,0 +1,41 @@
+<!-- 13.	Write a Java script to demonstrate use of Mouse, Keyboard, Form and window/ document events.-->
+
+<html>  
+<head> Javascript Events</head>  
+<body onload="window.alert('Page successfully loaded');">  
+<h2> Enter something here</h2>
+  
+<input type="text" id="input1" onkeydown="keydownevent()"/><br><br><br>
+<input type="button" onclick="clickevent()" value="Who's this?"/><br><br>
+<input type="text" id="input" onfocus="focusevent()"/><br>
+
+
+<script>  
+function keydownevent()
+	{
+		document.getElementById("input1");
+		alert("Pressed a key");
+	}
+
+document.write("The page is loaded successfully");  
+
+
+
+
+     
+  function clickevent()  
+    {  
+        document.write("This is JavaTpoint");  
+    }  
+
+function focusevent()
+	{
+		document.getElementById("input").style.background=" aqua";
+	}  
+
+
+</script>  
+
+</body>  
+
+</html>  
